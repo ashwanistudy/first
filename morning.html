@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>hello </h1>
-    <p>Good morning friend</p>
-    <h1>donish king</h1>
-</body>
+    <style>
+      div#box > div {
+        width: 25%;
+        border: 2px solid;
+      }
+      div#box > div > div:nth-of-type(1) {
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        padding: 30px 0px 30px 0px;
+      }
+      div#box > div img {
+        width: 100px;
+        display: block;
+        margin: auto;
+      }
+      div#box > div > div:nth-of-type(2) {
+        background-color: green;
+        padding: 20px;
+        text-align: center;
+      }
+      div#box > div > div:nth-of-type(2) > h3 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <div>
+        <div>
+          <img
+            src="https://masai-website-images.s3.ap-south-1.amazonaws.com/full_stack1_329d6b5595.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h3>Full Stack Web Development</h3>
+          <p>For 12th, Diploma and College Graduates, 18-28 years</p>
+          <hr />
+          <p>Become job-ready in 30 weeks</p>
+          <p>
+            Opportunities: Full Stack Developer, Software Engineer and much more.
+          </p>
+          <p>100% live learning with expert instructors.</p>
+          <p>Pay After Placement</p>
+          <button>View Details</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
