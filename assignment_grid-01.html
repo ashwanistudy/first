@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            max-width: 1300px;
+            margin: auto;
+        }
+        #container>div{
+            width: 30%;
+            margin: auto;
+        }
+        div#Calculator{
+            padding: 30px;
+            width: 60%;
+            margin: auto;
+            display: grid;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            /* grid-template-columns: repeat(4,60px);
+            grid-auto-rows: 70px; */
+            gap: 5px;
+            grid-template-areas:    "a1 a1 a1 a1"
+                                    "a2 a3 a4 a5"
+                                    "a6 a7 a8 a9"
+                                    "a10 a11 a12 a13"
+                                    "a14 a15 a16 a17";
+        }
+        div#Calculator>div{
+            background-color:black;
+            align-items: center;
+            padding: 20px;
+            border-radius: 5px;
+            
+            font-weight: 600;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        div#Calculator>div:nth-of-type(1){
+            grid-area: a1;
+            background-color: transparent;
+        }
+        div#Calculator>div:nth-of-type(2){
+            grid-area: a2;
+            background-color: transparent;
+        }
+        div#Calculator>div:nth-of-type(3){
+            grid-area: a3;
+            background-color: transparent;
+        }
+        div#Calculator>div:nth-of-type(4){
+            grid-area: a4;
+            background-color: transparent;
+        }
+        div#Calculator>div:nth-of-type(5){
+            grid-area: a5;
+            color: white;
+        }
+        div#Calculator>div:nth-of-type(6){
+            grid-area: a6;
+            background-color: transparent;
+        }
+        div#Calculator>div:nth-of-type(7){
+            grid-area: a7;
+            background-color: transparent;
+        }
+        div#Calculator>div:nth-of-type(8){
+            grid-area: a8;
+            background-color: transparent;
+        }
+        div#Calculator>div:nth-of-type(9){
+            grid-area: a9;
+            color: white;
+        }
+        div#Calculator>div:nth-of-type(10){
+            grid-area: a10;
+            background-color: transparent;
+        }
+        div#Calculator>div:nth-of-type(11){
+            grid-area: a11;
+            background-color: transparent;
+        }
+        div#Calculator>div:nth-of-type(12){
+            grid-area: a12;
+            background-color: transparent;
+        }
+        div#Calculator>div:nth-of-type(13){
+            grid-area: a13;
+            color: white;
+        }
+        div#Calculator>div:nth-of-type(14){
+            grid-area: a14;
+            color: white;
+            background-color: red;
+        }
+        div#Calculator>div:nth-of-type(15){
+            grid-area: a15;
+            background-color: transparent;
+        }
+        div#Calculator>div:nth-of-type(16){
+            grid-area: a16;
+            color: white;
+        }
+        div#Calculator>div:nth-of-type(17){
+            grid-area: a17;
+            color: white;
+        }
+        #container>div{
+            
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h1 style="text-align: center;color: #03807c;font-size: 50px;">Masai Calculator</h1>
+            <div id="Calculator">
+                <div>   </div>
+                <div >1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>+</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>-</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>x</div>
+                <div>C</div>
+                <div>0</div>
+                <div>=</div>
+                <div>/</div>
+                
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
