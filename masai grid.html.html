@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#container{
+        max-width: 1300px;
+        margin: auto;
+        display: grid;
+        grid-template-columns:20% 70%;
+        grid-auto-rows: auto;
+        gap: 20px;
+    }
+    div#container>div{
+        
+    }
+    div#container>div:nth-of-type(1){
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border-radius: 10px;
+    
+    }
+    div#career>div{
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid red;
+    }
+    div#career p{
+        display: inline;
+        font-size: 20px;
+        color: red;
+    }
+    div#career span{
+        padding: 10px 15px;
+        background-color: rgb(233, 176, 176);
+        border-radius: 10px;
+        font-size: 25px;
+        
+    }
+    div#box{
+        display: grid;
+        gap: 10px;
+        border-radius: 20px;
+        padding: 20px;
+        background-color: rgba(28, 0, 128, 0.068);
+        grid-auto-rows: 100px;
+        grid-template-columns: repeat(8, 100px);
+        grid-template-areas:    "a1 a1 a1 a1 a1 a2 a2 a2"
+                                "a1 a1 a1 a1 a1 a3 a3 a3"
+                                "a1 a1 a1 a1 a1 a4 a4 a4"
+                                "a5 a6 a7 a8 a9 a10 a11 a12";
+
+    }
+    div#box>div{
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+    div#box>div:nth-of-type(1){
+        grid-area: a1;
+    }
+    div#box>div:nth-of-type(2){
+        grid-area: a2;
+        background-color: #1aa0bd;
+    }
+    div#box>div:nth-of-type(3){
+        grid-area: a3;
+        background-color: #1aa0bd;
+    }
+    div#box>div:nth-of-type(4){
+        grid-area: a4;
+        background-color: #1aa0bd;
+    }
+    div#box>div:nth-of-type(5){
+        grid-area: a5;
+    }
+    div#box>div:nth-of-type(6){
+        grid-area: a6;
+    }
+    div#box>div:nth-of-type(7){
+        grid-area: a7;
+    }
+    div#box>div:nth-of-type(8){
+        grid-area: a8;
+    }
+    div#box>div:nth-of-type(9){
+        grid-area: a9;
+    }
+    div#box>div:nth-of-type(10){
+        grid-area: a10;
+    }
+    div#box>div:nth-of-type(11){
+        grid-area: a11;
+    }
+    div#box>div:nth-of-type(12){
+        grid-area: a12;
+    }#box>div>span:nth-of-type(1){
+        font-size: 40px;
+        margin-top: 30px;
+        display: inline-block;
+        margin-left: 30px;
+    }
+    #box>div>span:nth-of-type(2){   
+        margin-left:30px;
+        font-size: 20px;
+        display: inline-block;
+        width: 100px;
+        text-align: center;
+    }#box img{
+        width: 100%;
+        background-color: green;
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="career">
+            <div>
+                <span>1</span>
+                <p>Career Launchpad</p>
+            </div>
+            <div>
+                <span>2</span>
+                <p>Career Launchpad</p>
+            </div>
+            <div>
+                <span>3</span>
+                <p>Career Launchpad</p>
+            </div>
+            <div>
+                <span>4</span>
+                <p>Career Launchpad</p>
+            </div>
+            <div>
+                <span>5</span>
+                <p>Career Launchpad</p>
+            </div>
+        </div>
+        <div id="box">
+            <div>
+                <iframe style="border-radius: 10px; width: 100%;height: 100%;" src="https://cdn.masaischool.com/masai-website/cab_driver_became_software_engineer_meet_ashish_raj_from_munger_bihar_1_1080p_808ebc1236.mp4" frameborder="0"></iframe>
+            </div>
+            <div><span>6.9 LPA</span> <span>Average CTC</span></div>
+            <div><span>5000+</span><span>Trained & Placed</span></div>
+            <div><span>4000+</span><span>Hring Partners</span></div>
+            <div><img src="https://www.masaischool.com/images/new-homepage/outcome/dream11.png" alt=""></div>
+            <div><img src="https://www.masaischool.com/images/new-homepage/outcome/dream11.png" alt=""></div>
+            <div><img src="https://www.masaischool.com/images/new-homepage/outcome/dream11.png" alt=""></div>
+            <div><img src="https://www.masaischool.com/images/new-homepage/outcome/dream11.png" alt=""></div>
+            <div><img src="https://www.masaischool.com/images/new-homepage/outcome/dream11.png" alt=""></div>
+            <div><img src="https://www.masaischool.com/images/new-homepage/outcome/dream11.png" alt=""></div>
+            <div><img src="https://www.masaischool.com/images/new-homepage/outcome/dream11.png" alt=""></div>
+            <div><img src="https://www.masaischool.com/images/new-homepage/outcome/dream11.png" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>
